@@ -1,22 +1,9 @@
-# Criado por https://www.toptal.com/developers/gitignore/api/django
-# Edite em https://www.toptal.com/developers/gitignore?templates=django
+# Criado por https://www.toptal.com/developers/gitignore/api/python
+# Edite em https://www.toptal.com/developers/gitignore?templates=python
 
-### Django ###
-*.registro
-*.pote
-*.pyc
-__pycache__/
-configurações_locais.py
-banco de dados.sqlite3
-db.sqlite3-diário
-mídia
-
-# Se o seu processo de construção inclui a execução de collectstatic, então você provavelmente não precisa ou deseja incluir staticfiles/
-# no seu repositório Git. Atualize e descomente a linha a seguir adequadamente.
-# <nome-do-projeto-django>/staticfiles/
-
-### Pilha Django.Python ###
+### Python ###
 # Arquivos DLL compilados/otimizados em bytes
+__pycache__/
 *.py[bacalhau]
 *$py.class
 
@@ -70,8 +57,14 @@ cobrir/
 
 # Traduções
 *.mo
+*.pote
 
 # Coisas do Django:
+*.registro
+configurações_locais.py
+banco de dados.sqlite3
+db.sqlite3-diário
+db.sqlite3
 
 # Coisas de frasco:
 exemplo/
@@ -171,4 +164,14 @@ depuração_cython/
 # opção (não recomendada) você pode descomentar o seguinte para ignorar toda a pasta de ideias.
 #.ideia/
 
-# Fim de https://www.toptal.com/developers/gitignore/api/django
+### Patch do Python ###
+# Arquivo de configuração local do Poetry - https://python-poetry.org/docs/configuration/#local-configuration
+poesia.toml
+
+# ruff
+.ruff_cache/
+
+# Arquivos de configuração LSP
+pyrightconfig.json
+
+# Fim de https://www.toptal.com/developers/gitignore/api/python
